@@ -52,7 +52,7 @@ export class FlightFilterComponent {
     effect(() => {
       const selectedFilter = this.localStore.selectedFilter();
       console.log(selectedFilter);
-      // this.inputFilterForm.patchValue(this.localStore.selectedFilter());
+      this.inputFilterForm.patchValue(this.localStore.selectedFilter());
     });
     // this.localStore.initInputFilterUpdate(this.inputFilterForm.valueChanges);
     // this.localStore.initSelectedFilterUpdate(
